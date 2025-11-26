@@ -116,3 +116,60 @@ print(abs(-2.9))
 x = input("x : ")
 y = int(x) + 1
 print(f"x: {x}, y: {y}")
+
+# we are on comparison operators. the types of operators are;
+# >,<,<=,>=,= =,!=
+# for all of theses operators when used it will turn true the fact that the types are the same
+# with e.g 10 = "10", -with this you will get a false because
+# -thwy have different types,
+# -they store differently in the computers memory
+
+# next is conditional statement. we have:
+# if statement = this will print the statment made in the print function because everything is tru
+# elif (else if) = this is bringing in multiple conditions
+# else = the statement here will print when the conditions statement are not true
+
+# we are on Ternary Operator
+age = 22
+message = "Eligible" if age >= 18 else "Not eligible"
+print(message)
+
+# this is Logical operator
+# we have 3; they are:
+# and, or , not
+# and(when conditions are the same), or (when one condition is false and other is true), not ()
+high_income = True
+high_credit = True
+if high_income and high_credit:
+    print("Eligible")
+else:
+    print("not eligible")
+# this is the "and" logical operator
+
+high_income = False
+high_credit = True
+if high_income and high_credit:
+    print("Eligible")
+else:
+    print("not eligible")
+# this is the "or" logical operator
+
+# this is for loops
+# it is used to create repetition
+for number in range(3):
+    print("Attempt")
+    print("Attempt", number)
+    print("Attempt", number + 1)
+    print("Attempt", number + 1, (number + 1) * ".")
+
+# Exercise:
+# write a program to display the even numbers between 1 to 10
+# b.type the statement: we have 4 even numbers
+# hint given: call the range function: range = (1, 10). do not call the third argument, which is called, "Step".
+count = 0  # this is what we add starting to type the statement own
+for number in range(1, 10):
+    if number % 2 == 0:
+        print(number)
+print(
+    f"we have {count} even numbers"
+)  # this is addintion of what we add to reveal the message
